@@ -1,0 +1,29 @@
+//------------------------------------------------------------------------------------------------------------
+Exercise 2: 
+Declare array with 5 elements, user input 5 numbers and print the highest number
+//------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+ class Review {
+    public static void main(String args[])
+    {
+       int[] array = new int[100];
+       int highest = 0;
+        
+       Scanner scan = new Scanner(System.in);
+       
+       for(int i = 0; i<5; i++)
+       {
+           array[i] = scan.nextInt();
+           System.out.println(array[i]);
+       }
+        
+       
+       for(int i = 0; i<5; i++)
+       {
+           if(array[i]>highest)
+               highest = array[i];
+       } 
+        
+       System.out.println("The highest number is "+highest+".");
+    }
+}
