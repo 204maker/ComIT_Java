@@ -21,6 +21,6 @@ public class Main //Bank
 
     System.out.println(value2);
     System.out.println("Current balance: "+account.getBalance());
-    System.out.println("Current balance: "+account2.getBalance());
+    System.out.println("Current balance 2: "+account2.getBalance());
   }
 }
