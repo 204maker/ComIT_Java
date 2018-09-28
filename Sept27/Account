@@ -1,0 +1,109 @@
+/**************************************************************************
+Sept. 27 Class
+-----------------------------------------  
+Review about Class
+----------------------------------------- 
+Objects has:
+  -actions
+  -data
+
+ENCAPSULATION
+  - when you are protecting, you are encapsulating
+
+COHESION
+  - to prevent splitting
+  - centralized in one place
+  - reduce the risk of breaking the code, increased maintainability
+
+Constructor
+  - method used to help create an object (more about data)
+
+Microservices
+  - use multiple objects at the same time 
+
+Local vs. global variables - scope difference 
+
+Object attribute 
+
+-------------------------------------------------------------
+Case Example - BANKS
+-------------------------------------------------------------
+*Client
+*Account / Type 
+Branch 
+Employee (i.e. Advisor)
+Product 
+
+ACCOUNT -> class
+  attributes 
+    - client 
+    - number (int)
+    - type 
+    - amount (int)
+    - access 
+
+  actions -> METHODS
+    - withdraw
+    - deposit 
+    - transfer 
+    - payment 
+    - balance
+***************************************************************************/ 
+public class Account
+{
+  private Client client;
+  private int balance
+  private String number;    //Could be ID
+  private String type;
+
+
+  public Account(String number, String type, Client client)
+  {
+      this.number = number;
+      this.type = type;
+      this client = client;
+  }
+
+void deposit(int amount)
+{
+  balance = balance + amount; 
+}
+
+
+void withdraw(int amount)
+{
+  if(balance >= amount)
+  {
+    balance = balance - amount;
+    return amount;          // Return the amount withdrawn
+  }
+
+  else
+    return 0;
+}
+
+  int transfer(int amount, Client client)
+  {
+    if(balance >= amount)
+    {
+      balance = balance - amount;
+      client.getAccount().deposit(amount);
+      return amount;
+    }
+
+    else
+      return 0;
+  }
+
+  int getbalance()
+  {
+    return balance;
+  }
+
+  Client getClient()
+  {
+    return client;
+  }
+}
+
+ 
