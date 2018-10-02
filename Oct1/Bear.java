@@ -5,4 +5,9 @@ public class Bear extends Animal
   {
     super(age, color, specie);      // superconstructor
   }
+  
+  public void walk()
+  {
+    System.out.println("The bear is walking!");
+  }
 }
