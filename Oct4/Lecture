@@ -1,1 +1,83 @@
+Abstract class 
+- cannot be instantiated
+- can be reused
+-----------------------------------------------------------
+INHERITANCE
+-----------------------------------------------------------
+For example, creating a Java game:
 
+Animal
+  Dog
+    walk()
+    poop()
+  
+  Cat
+    walk()
+    poop()
+
+----------------------
+Improved Animal:
+----------------------
+RobotClean
+  clean()
+  move()
+
+RobotKiller
+  kill()
+  move()
+  
+Animal
+  walk()
+  poop()
+  
+  Dog    
+  
+  Cat
+   
+----------------------
+Improved Robot:
+----------------------
+Robot
+  move()
+  RobotClean
+    clean()
+
+  RobotKiller
+    kill()
+  
+  
+Animal
+  walk()
+  poop()
+  
+  Dog    
+  
+  Cat
+  
+ --------------------------------------------
+ What if I need to create a Robot Dog killer?
+ --------------------------------------------
+ 
+ Dog = pooper() + walker()                //*DO - action*, dog can be a pooper and a walker
+ Cat = pooper() + walker() 
+ RobotCleaner = walker() + cleaner()
+ RobotKiller = walker() + killer()
+ DogRobotKiller = walker() + killer()     // we are talking about the action
+                                          // make one action as a pattern of behavior
+ 
+ Robot
+  move()
+  RobotClean
+    clean()
+
+  RobotKiller
+    kill()
+  
+  
+Animal
+  walk()
+  poop()
+  
+  Dog    
+  
+  Cat
