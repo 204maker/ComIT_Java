@@ -2,18 +2,20 @@
                    /           |           \
                 View     Business rules     Repository
                                 
---------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
 Presentation
 Business
 Database
---------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
 Classes can be combined into a container called JAR.
 
 How about if the programmer who made the classes you use updated them?
 -- use a versioning tool i.e. Github
---------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------------------------
 Using IntelliJ
+-------------------------------------------------------------------------------------------------
 Java project
 |-- src (Right click to create a new package)
   |---New
@@ -31,11 +33,37 @@ Java project
                        *database for storing/recording
                        *Cylinder i.e. MySQL
               
+-------------------------------------------------------------------------------------------------
 
 RESULT:
 Java project
 |-- src
      |---- domain 
+     |        |---New 
+     |              |----Java class
      |---- repository
+     |        |---New 
+     |              |----Java class
      |---- service
+     |        |---New 
+     |              |----Java class
      |---- view
+     |        |---New 
+     |              |----Java class
+     
+     
+-------------------------------------------------------------------------------------------------
+Using Maven:
+-------------------------------------------------------------------------------------------------
+
+Snapshot 
+  - code in progress
+
+Production
+  - finished & tested!
+
+ Maven divides the source into
+    - main code
+    - test code
+    
+ *Standard over definition*
