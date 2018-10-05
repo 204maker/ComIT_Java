@@ -81,3 +81,24 @@ Animal
   Dog    
   
   Cat
+  --------------------------
+  You can implement multiple interfaces
+  --------------------------
+  -- concept of overload
+  
+  Create > New > Interface
+  
+  public interface Eatable
+  {
+    void eat(int amount)
+  }
+  
+  public class Person implements Eatable, Jumpable
+  {
+    public void eat(int amount){
+      System.out.println("Eating.... done!");
+      
+   public void jump(int amount){
+      System.out.println("Jumping.... done!");   
+  }
+  
