@@ -1,0 +1,5 @@
+Bank Account -> Using inheritance and interface
+
+1.) Two classes SavingAccount and ChequingAccount
+2.) For each withdraw for the SavingAccount will cost $1.00 and for ChequingAccount will cost $0.25
+3.) Create the Action Transferable and export the method transfer just for ChequingAccount
