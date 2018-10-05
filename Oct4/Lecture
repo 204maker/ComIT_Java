@@ -81,9 +81,9 @@ Animal
   Dog    
   
   Cat
-  --------------------------
+  -------------------------------------------
   You can implement multiple interfaces
-  --------------------------
+  -------------------------------------------
   -- concept of overload
   
   Create > New > Interface
