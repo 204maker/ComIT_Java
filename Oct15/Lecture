@@ -1,1 +1,25 @@
+Data structures in Java
+- Collections
+- List
+- applications: fast search
 
+
+Arrays []
+- positions are indexed, starting from 0.
+- static
+- contiguous block of memory
+
+- ArrayList.get();
+--------------------------------
+| 1 | 2 | 3 |.....         | n |
+--------------------------------
+
+Pointer - connects two spaces in memory
+        - other name is REFERENCE
+
+Lists
+- dynamic
+
+simple LinkedList
+
+MergeSort
