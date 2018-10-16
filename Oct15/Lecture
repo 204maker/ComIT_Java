@@ -20,10 +20,13 @@ Pointer - connects two spaces in memory
 Lists
 - dynamic
 
-simple LinkedList
+LinkedList
 - dynamic list
 - double link
+- for dynamic structures
 
 MergeSort
 
+//----------------------------------------------------------
+//Create a list for the final project for practice
 
